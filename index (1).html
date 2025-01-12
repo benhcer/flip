@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Memory Card Game</h1>
+    <div class="board" id="gameBoard"></div>
+    <button id="startButton">Start Game</button>
+    <button id="nextLevelButton" style="display: none;">Next Level</button>
+    <p id="gameMessage"></p>
+    <p id="levelDisplay">Level: 1</p>
+    <p id="coinDisplay">CashCoins: 0</p>
+   <!-- Coin Exchange Store HTML -->
+<div id="store">
+  <button id="storeButton">Store 🛒</button>
+  <div id="storePanel" style="display: none;">
+    <h2>Exchange Your CashCoins</h2>
+    <button id="buyExtraFlips">Buy Extra Flips (50 Coins)</button><br>
+    <button id="buyPowerUp">Buy Power-Up (100 Coins)</button><br>
+    <button id="closeStore">Close</button>
+  </div>
+</div>
+
+
+    <div id="settings">
+  <button id="settingsButton">⚙️</button>
+  <div id="settingsPanel" style="display: none;">
+    <label for="soundControl">Sound: </label>
+    <input type="checkbox" id="soundControl" checked> <br>
+    <label for="vibrateControl">Vibrate: </label>
+    <input type="checkbox" id="vibrateControl" checked> <br>
+    <button id="closeSettings">Close</button>
+  </div>
+</div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
